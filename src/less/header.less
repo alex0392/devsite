@@ -1,0 +1,101 @@
+.header{
+	background-color: #fff;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	&__langBlock{
+		position: absolute;
+		top:3vh;
+		right: 5%;
+		&>ul{
+			list-style: none;
+			.active{
+				border-bottom: 3px solid @mainColor;
+			}
+			&>li{
+				margin: 0 2px;
+				display: inline-block;
+				font-size: 2rem;
+				&>a{
+					text-decoration: none;
+					color:#000;
+				}
+			}
+		}
+	}
+	&__top{
+		margin-top: 15vh;
+		.flex();
+		&--logo{
+			height:15vh;
+			max-height: 150px;
+			padding: 10%;
+			background-color: @mainColor;
+			&>img{
+				height: 100%;
+			}
+		}
+		&--title{
+			text-align: center;
+			color:#050505;
+			margin-top: 10px;
+			&--name{
+				font-weight: bold;
+				font-family: PFDinCondensedMedium;
+				font-size: 4rem;
+			}
+			h1{
+				font-size: 2.5rem;
+				font-family: PFDinCondensedRegular;
+			}
+		}
+	}
+	&__bottom{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding:2vh 0;
+		width: 100%;
+		overflow: hidden;
+		background-color: @mainColor;
+		&--menu{
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		&>ul{
+			list-style: none;
+			margin:0;
+			padding: 0;
+			.flex();
+			&>li{
+				background-color: @mainColor;
+				width: 100%;
+				text-align: center;
+				padding: 10px;
+				&>a{
+					font-size: 3.5rem;
+					color:#000;
+					text-decoration: none;
+					display: inline-block;
+					position: relative;
+					font-family: PFDinCondensedRegular;
+					&:after{
+						content: "";
+						position: absolute;
+						top:100%;
+						left: 0;
+						background-color: #111;
+						opacity: 0;
+						width: 100%;
+					}
+					&:hover:after{
+						opacity: 1;
+						height: 4px;
+					}
+				}
+			}
+		}
+	}
+	}
+
+}

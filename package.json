@@ -1,0 +1,20 @@
+{
+ "name": "devSite",
+ "version": "0.0.1",
+ "description": "My site",
+ "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-autoprefixer": "latest",
+    "less-plugin-autoprefix": "latest",
+    "less-plugin-clean-css": "latest"
+  },
+  "dependencies": {
+    "mozjpeg": "^4.1.1"
+  }
+}

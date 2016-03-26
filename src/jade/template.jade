@@ -1,0 +1,72 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		// style
+		link(rel="stylesheet" href="src/css/result.css")
+		link(rel="stylesheet" href="bower_components/normalize-css/normalize.css")
+		//link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+		// end style
+		// begin script
+		//script(src="//localhost:35729/livereload.js")
+		//script(src="bower_components/bootstrap/dist/js/bootstrap.min.js" type='text/javascript')
+		// end script
+		title Разработка сайтов
+	body
+		header.header
+			div.header__langBlock
+				ul
+					li.active
+						a(href="#")
+							|Ru
+					li
+						|/
+					li
+						a(href="#")
+							|By
+					li
+						|/
+					li
+						a(href="#")
+							|En
+			div.container
+				div.header__top
+					div.col-sm-12
+						div.header__top--logo
+							img(src="images/logo.png" alt="logotype")
+					div.header__top--title
+						div.header__top--title--name
+							|Александр Романов
+						h1
+							|Разработка сайтов и веб приложений
+			div.header__bottom
+				div.header__bottom--menu
+					ul
+						li
+							a(href="#")
+								|мои работы
+						li
+							a(href="#")
+								|услуги
+						li
+							a(href="#")
+								|обо мне
+						li
+							a(href="#")
+								|контакты
+	section.works
+		div.title-page
+			h2 мои работы
+		div.works__box
+			-var items=0
+			while items<4
+				div.works__box_item
+					a(href="#")
+						div.works__box_item--img
+						div.works__box_item--logo
+				-items++
+
+
+
+
